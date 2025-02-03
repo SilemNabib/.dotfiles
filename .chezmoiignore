@@ -1,0 +1,7 @@
+README.md
+
+**/*.log            # Ignore all .log files in any directory
+*.log               # Ignore .log files in the root directory
+
+.history.*          # Ignore all files starting with .history. in any directory
+**/.history.*       # Ignore all .history.* files in any directory
