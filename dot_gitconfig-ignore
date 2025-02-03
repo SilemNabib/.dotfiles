@@ -1,0 +1,14 @@
+# env
+.python-version
+.env*
+
+# kubernets
+.kube/
+
+# editors
+.idea/
+.vscode/
+
+# compile files
+*.log
+*.out

@@ -1,0 +1,18 @@
+[user]
+	name = {{ .name }}
+	email = {{ .email }}
+[core]
+	editor = vim
+	eol = lf
+	autocrlf = input
+	excludesfile = {{ .home }}/.gitconfig-ignore
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+
+# windows safe directory
+{{ if eq .chezmoi.os "windows" -}}
+	[safe]
+	directory = C:/Users/silem/.local/share/chezmoi
+{{ end -}}
