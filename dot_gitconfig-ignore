@@ -1,5 +1,6 @@
 # env
 .python-version
+.java-version
 .env*
 
 # kubernets
@@ -8,6 +9,7 @@
 # editors
 .idea/
 .vscode/
+*.code-workspace
 
 # compile files
 *.log
