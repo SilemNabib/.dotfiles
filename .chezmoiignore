@@ -5,8 +5,17 @@ README.md
 
 .history.*          # Ignore all files starting with .history. in any directory
 **/.history.*       # Ignore all .history.* files in any directory
+ 
+{{- if eq .chezmoi.os "windows" }}
+zsh/
+{{- end }}
 
+# ================================================================================
 
+# Example of ignoring something when a condition is met
+{{- if ne .email "example.name@company.com" }}
+.company-directory  # Directory to ignore if condition is met
+{{- end}}  # End condition, remove trailing whitespace
 
 # ================================================================================
 
