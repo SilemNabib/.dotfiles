@@ -5,7 +5,4 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZSH_THEME="garyblessington"
-
-eval "$(ssh-agent -s)" >/dev/null
-ssh-add ~/.ssh/id_ed25519 2>/dev/null
+ZSH_THEME="powerlevel10k/powerlevel10k"
